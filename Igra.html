@@ -1,18 +1,28 @@
-<html lang="en">
+<html lang="hr">
     <head>
          <title>IGRA</title>
             <style type="text/css">
-                body {
-                background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
+                html, body {
+                    margin: 0; padding: 0;
+                    background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
                     width: 100%;
                     margin: 0;
                     text-align: center;
                     height: 300px;
-                    padding-top: 120px;
+                    padding-top: 20px;
                     box-sizing: border-box;
                     -webkit-animation: slide 20s linear infinite;
-                color: black;
-                font-family: sans-serif;
+                    color: black;
+                    font-family: sans-serif;
+                }
+
+                .hero-bkg-animated h1 {
+                    font-family: sans-serif;
+                }
+
+                @-webkit-keyframes slide {
+                    from { background-position: 0 0; }
+                    to { background-position: -400px 0; }
                 }
                 #shape {
                 width: 200px;
@@ -28,7 +38,7 @@
     </head>
     <body>
         <h1>Testirajte vrijeme reakcije !</h1>
-        <p>Kliknite na objekte sto brze mozete !</p>
+        <p>Kliknite na objekte što brže možete !</p>
         <p class="bold">Vaše vrijeme: <span id="timeTaken"></span></p>
         <div id="shape"></div>
             <script type="text/javascript">
